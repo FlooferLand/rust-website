@@ -16,7 +16,7 @@ async fn main() {
     let leptos_options = conf.leptos_options;
     let addr = leptos_options.site_addr;
     let routes = generate_route_list(App);
-
+    
     // build our application with a route
     let app = Router::new()
         .leptos_routes(&leptos_options, routes, App)
